@@ -1,0 +1,189 @@
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com"> <!-- external font imported from google's site -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit&family=Lobster&family=Readex+Pro&display=swap" rel="stylesheet">  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="style3.css">
+<svg xmlns="//www.w3.org/2000/svg" version="1.1" class="svg-filters" style="display:none;">
+  <defs>
+    <filter id="marker-shape">
+      <feTurbulence type="fractalNoise" baseFrequency="0 0.15" numOctaves="1" result="warp" />
+      <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warp" />
+    </filter>
+  </defs>
+</svg>
+
+<style>  
+html,body { <!-- style for body -->
+    margin:0;
+    padding:0;
+	font-family: Poppins, -apple-system, system-ui, BlinkMacSystemFont, 'Lobster', cursive, 'Readex Pro', sans-serif, 'Kanit', sans-serif;; 
+	background: black;
+	background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;  
+}
+#navbar { <!-- style for navbar -->
+	background-color: #f1f1f1;
+	float: left;
+	color: black;
+	position: fixed;
+	transition: 0.4s;
+	top: 0;
+	-text-indent:44vw;
+	text-align: center;
+	font-size: 1.5vw;
+	font-weight: bold;
+	width: 100%;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.65);
+	background-color: rgba(64, 64, 64, 0.96);
+	z-index: 1;
+	cursor: default;
+}
+#lorgepic  { <!-- AKA the green forrest picture -->
+	top:0;
+	width: 98.9vw;
+	height: 55.5vw;
+	position: relative;
+	overflow: hidden;
+	display:block;
+}
+#loorgepic2 { <!-- windmills -->
+	left: 0px;
+	width: 98.9vw; 
+	height: 56.2vw;
+	overflow-x: scroll;
+	position: relative;
+	overflow: hidden;
+	display:block;
+}
+
+#img1 {opacity: 0; width: 100%; height: 46vw; } 
+#img2 {opacity: 0; width: 100%; height: 46vw; }
+#img3 {opacity: 1; width: 100%; height: 46vw; }
+#img4 {opacity: 0; width: 100%; height: 46vw; }
+
+</style>
+</head>
+
+<body>
+
+	<div id ="navbar">  <!-- seperated div for fixed navbar -->
+	
+		<div class="dropdown"> <!-- creds 👍 -->
+			<button  style="position:absolute; font-size: 1.15vw;" class="dropbtn">☺</button>
+			
+				<div class="dropdown-content"> <!-- drop down for creds on hover -->
+					<a href="creds.html">creds!! 🤠🤠</a>
+					
+				</div>
+				
+			
+				</div>
+		<div id="Quiz"> <!-- quiz button -->
+		</div>
+		<!-- HållbarUtveckling title -->
+		<p><span style="color:#4F735B; font-family: Lobster">Hållbar</span><span style="color:#C1B9A8; font-family: Lobster">Utveckling</span><a style="text-decoration: none; float:right; font-size:1.2vw; padding-right:1.2vw; font-family: Readex Pro; color:#d57276" href="Quiz.html">Quiz</a>	</p>	
+	</div>
+
+	<div id ="lorgepic"> <!-- forrest pic absolute + text relative to the image -->
+		<div>
+			<h3 class="lorgepictitle" > Vad är hållbar utveckling?</h3>
+			<img style="width:100%" src="forrest big green.jpg">
+			<p class="lorgepictext" > I en globaliserad värld var nya teknologier konstant utvecklas, är det viktigt för oss människor att ta vara på den jord som vi har. Med oceaner som förorenas, en oroande växthuseffekt, polarisar som smälter och många andra problem som står inför vår framtid, är det viktigare än någonsin att ta sitt personliga ansvar och bidra till en global utveckling som är hållbar för alla. Nedan finns information kring ämnen som vi känner är extra viktigt, och hur <span style="color:#d57276;">DU</span> kan arbeta för att förbättra dessa problem. <br>
+Ta även vår quiz för att testa din kunskap!
+ </p>
+	
+	</div>
+	</div>
+
+	<div id ="loorgepic2"> <!-- windmills -->
+		<div><h3 class="lorgepictitle2" > Vilka är problemen då?</h3>
+		<video style="width:100%" autoplay muted loop >
+		<source src="windmills-vroooooooom.mp4" type="video/mp4">
+		</video>
+		
+	</div>	
+	</div>
+	
+	
+<ul id="background"> <!-- start of accordion table. <img> below for related background images -->
+	<img id="img1" src="gobble-gobble.jpg">
+	<img id="img2" src="bigsmoke.jpg">
+	<img id="img3" src="windy-millis.jpg">
+	<img id="img4" src="textil.jpg">
+	<li id="klimat">
+		<div class="title"> <!-- individual slides of accordion -->
+			<h2 style="font-family: Lobster"> Klimatet </h2>
+		</div>
+		<div class="text">
+			<p><span style="font-family: 'Kanit', sans-serif;" class="highlight"> Klimatet innefattar de fysiska förhållandena i atmosfären såsom nederbörd, temperatur och lufttryck. Det finns olika typer av klimat och därför delas de därför in i olika kategorier, vilket är exempelvis tropiska klimatzonen, subtropiska klimatzonen, tempererade klimatzonen och arktiska klimatzonen. 
+	<br><br>Klimatet är under en stor förändring eftersom den ständigt påverkas av olika rader faktorer som människan själv orsakat. Detta genom en rad olika utsläpp, bland annat koldioxidhalten som lett till temperaturökning. Detta har gjort att arktis havsis smälter och dess utbredning har minskat markant under de senare tio åren. Till följd av det förändrade klimatet har även extremväder varit aktuellt, då exempelvis värmeböljor blivit mer extrema, samma gäller kraftigare nederbörd. Dock är det svårt att förutse vissa typer av klimatförändringar och när och hur stort bidraget kommer att bli. Vissa områden vet vi mer om, exempelvis vår smältande polaris. Även havsvattnet är under hot då det beräknas inte kunna hålla jämna steg med upptaget av koldioxidet med hur fort dagens utsläpp går åt.<br><br>
+De förändringar som skett i Sverige liknar resten av världens förändringar. De mätningar som gjorts tyder på att ökning av årsnederbörden sker just nu samt att det kommer framöver vara mindre snö och is på vintertid, trots detta så är det stor ovisshet hur variationer kommer se ut år till år. Dessa variationer gör det även svårt för forskare att urskilja och veta hur de långsiktiga klimatförändringarna kommer att se ut.  
+ </span></p>
+		</div>
+	</li>
+	<li id="för">
+		<div class="title"> <!-- individual slides of accordion -->
+			<h2 style="font-family: Lobster"> Föroreningar</h2>
+		</div>
+		<div class="text">
+			<p> <span style="font-family: 'Kanit', sans-serif;" class="highlight">Definitionen av föroreningar är ämnen som är skadliga för oss människor, djuren och växter. Föroreningar kan finnas bland annat i luften och vatten men även i maten vi äter. Detta uppkommer genom utsläpp från industrier eller fordon. Men kan även uppkomma genom spill och vid olyckor. <br><br> 
+                Det finns en hel del områden i Sverige som klassas som förorenade områden, dock är det enbart 1200 områden som klassas som farliga och som ett hot mot människan och miljön. Dessa områden representerar 1,5% av de totalt förorenade områdena. Sverige arbetar sedan 1990 med att riskbedöma vilka områden som behöver undersökas och åtgärdas. Många av de områden som är förorenade är orsakade från efterlämnade industrier. <br><br> 
+                Det finns olika typer av föroreningar och ett av dessa är kemisk förorening, vilket kan orsakas av bland annat vattenbrist, höjda vattennivåer och ändrade flödesmönster. En annan typ av föroreningar är mikrobiologisk förorening och kan påverka människan genom att vatten förorenas, vilket kan leda till akuta besvär såsom illamående, feber och magsjuka om vi får i oss det. <br><br> 
+                När ett område riskbedöms kollar man på olika faktorer såsom vad som kan utgöra en risk och vad som kan ha ett högt värde och bör därför skyddas och bevaras. Sedan drar en koppling mellan själva föroreningar och hur människan och miljön kan påverkas av detta. Om ett område bedöms som förorenat på den nivån att det är ett hot mot människan eller miljön skall detta åtgärdas. De metoder som finns är exempelvis sanering, schakt och deponering. </span>
+            </p>
+		</div>
+	</li>
+	<li class="active" id="el"> <!-- class active active accordion on page load -->
+		<div class="title"> <!-- individual slides of accordion -->
+			<h2 style="font-family: Lobster"> Elproduktion </h2>
+		</div>
+		<div class="text">
+			<p> <span style="font-family: 'Kanit', sans-serif;" class="highlight">Globalt sätt står kolkraftverk för över en tredjedel av den el som produceras i världen, men står samtidigt för över 70 procent av alla utsläpp kopplade till elproduktion. Varje år släpps det ut över 10 Gigaton koldioxid från koleldade kraftverk. Detta motsvarar närmare en tredjedel av de globala koldioxidutsläppen och gör att kolkraftverken är det som bidrar mest till den globala uppvärmningen. <br><br>
+				Kina är det land som använder sig mest av kolkraft, faktiskt så mycket att de står för mer kolkraftsanvändning än hela resterande världen tillsammans. Dock är man även det land som toppar listan för förnyelsebar energi genom att satsa mycket på vind- och solenergi. <br><br>
+				På grund av de stora koldioxidutsläppen kopplade till kolkraftverk är övergången till förnyelsebar elproduktion viktig. 2018 var det endast sju procent av den globala elproduktionen som kom från sol och vind. Att övergå från exempelvis kolkraft till förnyelsebar energi-och elproduktion gör inte bara nytta för klimatet utan har även andra fördelar. I städer som Peking och New Delhi kan luften utomhus vara så pass dåliga att myndigheter rekommenderar sina invånare att inte vara utomhus under vissa perioder av dagen. Majoriteten av luften har blivit förorenad från just förbränning av kol eller andra fossila bränslen. Kolkraftverk släpper nämligen bland annat ut stora mängder svaveldioxid, utöver koldioxid. <br><br> 
+				En övergång till mer förnyelsebar energi såsom sol-och vindkraft skulle förbättra luften i städerna till den grad att det inte längre innebär någon risk för invånarnas hälsa att vistas utomhus. Andra konkreta fördelar med vindkraft är att de under drift aldrig har någon påverkan på den globala uppvärmningen och att vindkraftverk har en begränsad påverkar på den biologiska mångfalden. Absolut största fördelen är dock att vindkraften är en oändligt förnybar energikälla, eftersom vinden aldrig försvinner. </span>
+			</p>
+		</div>
+	</li>
+	<li id="text">
+		<div type="button" class="title"> <!-- individual slides of accordion -->
+			<h2 style="font-family: Lobster"> Textiltillverkning </h2>
+		</div>
+		<div class="text">
+			<p> <span style="font-family: 'Kanit', sans-serif;" class="highlight">Textiltillverkning och modebranschen är två branscher som varje år påverkar miljön och klimatet negativt och motarbetar en hållbar utveckling mer än vad gemene man kanske tror. Inom textiltillverkningen används det framför allt vatten och kemikalier. För att framställa endast en T-shirt av bomull krävs det uppskattningsvis 2600 liter vatten och 1,4 kg kemikalier. För att tillverka ett kilo bomull används det 10'000 liter vatten. <br> <br>
+                Branschen står även för nästan 10 procent av de globala utsläppen av växthusgaser. Vilket är mer än vad globala flygningarna och sjöfartstransporter gör. De producerar exempelvis 92 miljoner ton avfall och konsumerar 79 miljarder kubikmeter vatten varje år, där den medförda påfrestningen av detta oftast landar hos utvecklingsländer. <br> <br>
+                Ett klädesplaggs miljöpåverkan slutar inte heller när plagget kommit fram till konsumenten. Se till att sköta dina kläder genom att tvätta dem i rätt temperatur men tvätta dem inte för ofta. Tvättning av syntetiska material kan frigöra upp till 700'000 mikroplastiska fiber per tvätt. Dessa riskerar sedan till sist att hamna i haven. De uppskattas att ca. 500'000 ton mikroplaster hamnar i haven varje år endast från tvättning av kläder. <br> <br>
+                Att faktiskt köpa kläder i second hand affärer något som bidrar till en hållbar utveckling mycket, eftersom ca. 70% av ett klädesplaggs påverkan på miljön sker under tillverkning. En viktig del i målet att få klädindustrin mer hållbar är att människor har en mer hållbar inställning där man prioriterar färre köp, men av desto bättre kvalité. Det är även viktigt att försöka köpa kläder märkta med någon form av miljökrav. Då vet man att det har ställts kvar på plagget, ända från början av produktionskedjan fram till färdigt plagg. </span>
+			</p>
+		</div>
+	</li>
+</ul>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+<script>
+	window.onscroll = function() {scrollFunction()}; <!-- script for navbar resize text on scroll -->
+
+	function scrollFunction() {
+	if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("navbar").style.fontSize = "1.2vw";
+	} else {
+    document.getElementById("navbar").style.fontSize = "1.5vw";
+	}
+} 
+</script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script2.js"></script> 
+
+
+
+</body>
+</html>

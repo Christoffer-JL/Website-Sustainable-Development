@@ -1,0 +1,308 @@
+body{
+padding:0;
+}
+
+.top {
+top:0px;
+position:absolute;
+left:0px;
+width:1536px;
+background-color:lightblue;
+font-family:Arial;
+padding: 10px;
+}
+/* navbar css, not used */
+.navbar {
+	background-color: #f1f1f1;
+	color: black;
+	position:fixed;
+	transition:0.4s;
+	top:0;
+	text-align: center;
+	font-size:25px;
+	font-weight: bold;
+	width:100%;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.65);
+	background-color: rgba(64, 64, 64, 0.96);
+	z-index: 1;
+}
+/* not used */
+.largepic  {
+	top:0;
+	height: 820;
+	opacity: 1;
+}
+/* not used */
+.largepic2 {
+left: 0px;
+top:0px; 
+width:100%; 
+height:114.5%;
+overflow-x: scroll;
+}
+
+
+
+/* main table for accordion */
+ul {
+	display: flex;
+	height: 46vw;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	list-style-type: none;
+} 
+/* indivitual slides of accordion */
+li {
+	flex: 1;
+	top: 0vw;
+	display: flex;
+	align-items: stretch;
+	margin:0px;
+	padding: 1vw;
+	<!-- background-image: url('forest-gf24fc730d_1920 - kopia.jpg'); -->
+	cursor: pointer;
+	transition: all 0.5s ease;
+	border: 1px solid rgba(0,0,0,5);
+	position: relative;
+	cursor: default;
+
+}
+/* style for slides design on hover */
+li:hover {
+	opacity: 0.75;
+	background: rgba(0, 0, 0, .25);
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.05);
+}
+/* active css for slides */
+li.active {
+	flex: 5;
+	cursor: default;
+	background: rgba(0, 0, 0, .55);
+	opacity: 1;
+}
+
+li.active h2 {
+	opacity: 1;
+}
+/* active css for text blocks */
+li.active .text {
+	flex: 4;
+	opacity: 1;
+	transform: scaleX(1);
+	color: #ba9a88;
+	text-shadow: 1vw 1vw 1vw #5a3f2e;
+	font-size: 1vw;
+}
+/* accordion titles */
+li .title {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	width: 1vw;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	color: #e1d1c1;
+	
+	text-shadow: 1px -1px #0f0f0f;
+}
+/* accordion titles */
+li .title h2 {
+	margin: 1vw;
+	transform: rotate(-45deg);
+	white-space: wrap;
+	text-shadow: 1px 1px #0f0f0f;
+	font-size: 1.5vw;
+}
+/* accordion text */
+li .text {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	margin-top: 1vw;
+	padding-top: 1vw;
+	padding-left: 1vw;
+	padding-right: 1vw;
+	opacity: 0;
+	transition: all 0.25s 0.1s ease-out;
+	font-size: 1vw;
+}
+/* Sätter stil för textblock i ämnesrutorna */
+.highight {
+	background-color: rgba(0,0,0,0.45);
+	display: inline-block;
+	padding: 1px;
+}
+
+.highlight- {
+	position:relative;
+	height:10px;
+    line-height: 1.5vw;
+    text-align: center;
+    background: #3e5336;
+}
+/* Titelstil till inledningsbild */
+.lorgepictitle {
+	position: absolute;
+	top: 15vw;
+	text-align: center;
+	width: 100%;
+	color: #d57276;
+	font-family: Readex Pro;
+	font-size:3.25vw;
+	text-shadow: 1px 1px #0f0f0f;
+	cursor: default;
+}
+/* Textblock-stil till inledningsbild */
+.lorgepictext {
+	position: absolute;
+	top: 22.5vw;
+	text-align: center;
+	width: 100%;
+	color: #C1B9A8;
+	font-family: Readex Pro;
+	font-size: 1.25vw;
+	padding-left: 8.5%;
+	padding-right: 8.5%;
+	box-sizing:border-box;
+	text-shadow: 1px 1px #0f0f0f;
+	cursor: default;
+
+}
+/* Titel för vindturbinsvideo  */
+.lorgepictitle2 {
+	position: absolute;
+	text-align: center;
+	top: 18.5vw;
+	width: 100%;
+	color: #d57276;
+	font-family: Readex Pro;
+	font-size:3.25vw;
+	text-shadow: 1px 1px #0f0f0f;
+	cursor: default;
+}
+/* Credits  */
+.dropdown {
+	float: left;
+	overflow: hidden;
+	
+}
+
+.dropdown .dropbtn {
+	border: none;
+	outline: none;
+	color: white;
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
+	padding-left: 0.8vw;
+	padding-top: 0.2vw;
+	
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  -background-color: red;
+  padding-left: 1vw;
+}
+/* drop down content aka "Creds" */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  -background-color: #f9f9f9;
+  min-width: 1vw;
+  font-size: 0.85vw;
+  -box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 0.5vw;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+
+}
+/* code to make the smiley face rainbow */
+.dropdown-content a:hover {
+  background-color: rgba(64, 64, 64, 0.96);
+  animation: colorRotate 1s linear 0s infinite;
+
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+
+}
+/* rainbow smiley face */
+button {
+	animation: colorRotate 2s linear 0s infinite;
+}
+
+.rainbow {
+	animation: colorRotate2 2s linear 0s infinite;
+}
+/* rainbow color rotate */
+@keyframes colorRotate {
+	from {
+		color: #6666ff;
+	}
+	10% {
+		color: #0099ff;
+	}
+	50% {
+		color: #00ff00;
+	}
+	75% {
+		color: #ff3399;
+	}
+	100% {
+		color: 6666ff;
+	}
+}
+/* blue red color rotate */
+@keyframes colorRotate2 {
+	0% { color: red; }
+  50% { color: blue; }
+  100% { color: red; }
+
+}
+/* this is for the creds dw abt it */
+.bg {
+	background-image:url("https://64.media.tumblr.com/e7053a4e57b18d615379de49673d6b0e/tumblr_inline_ouuuhbvMRB1s2lhps_640.png");
+	height: 49.65vw;
+	overflow: hidden;
+	background-position: center;
+	background-repeat: repeat;
+	position:relative;
+}
+/* background for the accordions */
+#background img {
+	position: absolute;
+	max-width: 100%;
+	max-height: 100vh;
+	margin: auto;
+	background-size: cover; 
+	background-position: center center;
+}
+	
+a:link {
+  color:#4F735B;
+}
+
+/* visited link */
+a:visited {
+  color:#4F735B;
+}
+
+/* mouse over link */
+a:hover {
+  color:#4F735B;
+}
+
+/* selected link */
+a:active {
+  color:#4F735B;
+}

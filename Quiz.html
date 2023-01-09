@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color:#3C3C3C">                                                                                      <!ÄNDRA FÄRG PÅ BODY>
+                                                                                                                             <!INVERTERAR FÄRGEN I HELA QUIZZEN FÖR EN SNYGGARE/LÄTTARE "LOOK" PÅ ALL TEXT>
+                                                                                                                             <!NEDAN ÄR RADIO KNAPPAR FÖR INPUT FRÅN ANVÄNDAREN SAMT HEADER3 FÖR FRÅGOR>
+                                                                                                                             <!KOMMENTERAR FÖRSTA FÖR ALLA ANVÄNDER I PRINCIP SAMMA METOD>
+                                       
+    <h3 style="color:white">                                                                                                 <!ALLA "h3" ÄR FRÅGOR, DETTA ÄR FRÅGA 1, NÄSTA ÄR FRÅGA 2 OSV>
+        Hur mycket vatten går det uppskattningsvis åt för att producera en vanlig t-shirt?
+    </h3>
+    <input type="radio" name="question1" value="1One"><p style="display:inline; color:white" id="q1-1">2600 L</p><br>        <!EN RADIO-KNAPP MEN NAMNET "QUESTION1" OCH VALUE "1One", NAMNET ANVÄNDS FÖR ATT GRUPPERA ETT ANTAL KNAPPAR, VALUE ÄR VÄRDET PÅ KNAPPEN SOM JÄMFÖRS MED RÄTT SVAR>
+    <input type="radio" name="question1" value="1Two"><p style="display:inline; color:white" id="q1-2">1000 L</p><br>        <!EN RADIO-KNAPP MEN NAMNET "QUESTION1" OCH VALUE "1Two", NAMNET ANVÄNDS FÖR ATT GRUPPERA ETT ANTAL KNAPPAR, VALUE ÄR VÄRDET PÅ KNAPPEN SOM JÄMFÖRS MED RÄTT SVAR>
+    <input type="radio" name="question1" value="1Three"><p style="display:inline; color:white" id="q1-3">1.4L</p><br><br>    <!EN RADIO-KNAPP MEN NAMNET "QUESTION1" OCH VALUE "1Three", NAMNET ANVÄNDS FÖR ATT GRUPPERA ETT ANTAL KNAPPAR, VALUE ÄR VÄRDET PÅ KNAPPEN SOM JÄMFÖRS MED RÄTT SVAR>
+    
+    <h3 style="color:white">
+        Vad har klimatförändringar lett till?
+    </h3>
+    <input type="radio" name="question2" value="2One"><p style="display:inline; color:white" id="q2-1">Dålig hälsa i Sverige</p><br>
+    <input type="radio" name="question2" value="2Two"><p style="display:inline; color:white" id="q2-2">Temperaturökning</p><br>
+    <input type="radio" name="question2" value="2Three"><p style="display:inline; color:white" id="q2-3">Corona pandemi</p><br><br>
+    
+    <h3 style="color:white">
+       När under ett klädesplaggs livstid har den som mest klimatpåverkan?
+    </h3>
+    <input type="radio" name="question3" value="3One"><p style="display:inline; color:white" id="q3-1">Under tillverkningsprocessen</p><br>
+    <input type="radio" name="question3" value="3Two"><p style="display:inline; color:white" id="q3-2">Under transport</p><br>
+    <input type="radio" name="question3" value="3Three"><p style="display:inline; color:white" id="q3-3">Under användning</p><br><br>
+    
+    <h3 style="color:white">
+       Vilka två ämnen släpps bland annat ut från ett kolkraftverk?
+    </h3>
+    <input type="radio" name="question4" value="4One"><p style="display:inline; color:white" id="q4-1">Koldioxid och Svaveldioxid</p><br>
+    <input type="radio" name="question4" value="4Two"><p style="display:inline; color:white" id="q4-2">Kväve och Syre</p><br>
+    <input type="radio" name="question4" value="4Three"><p style="display:inline; color:white" id="q4-3">Helium och Neon</p><br><br>
+    
+    <h3 style="color:white">
+       Hur många procent av utsläpp kopplat till elproduktion står kolkraften för?
+    </h3>
+    <input type="radio" name="question5" value="5One"><p style="display:inline; color:white" id="q5-1">Över 30%</p><br>
+    <input type="radio" name="question5" value="5Two"><p style="display:inline; color:white" id="q5-2">Över 70%</p><br>
+    <input type="radio" name="question5" value="5Three"><p style="display:inline; color:white" id="q5-3">Över 10%</p><br><br>
+    
+    <h3 style="color:white">
+       Vad är ett exempel på en konsekvens till klimatförändringar? 
+    </h3>
+    <input type="radio" name="question6" value="6One"><p style="display:inline; color:white" id="q6-1">Dåliga matvanor</p><br>
+    <input type="radio" name="question6" value="6Two"><p style="display:inline; color:white" id="q6-2">Smältande polaris</p><br>
+    <input type="radio" name="question6" value="6Three"><p style="display:inline; color:white" id="q6-3">Fler utbyggnader av hus</p><br><br>
+    
+    <h3 style="color:white">
+       Vart finns föroreningar?
+    </h3>
+    <input type="radio" name="question7" value="7One"><p style="display:inline; color:white" id="q7-1">I mat</p><br>
+    <input type="radio" name="question7" value="7Two"><p style="display:inline; color:white" id="q7-2">På ytor</p><br>
+    <input type="radio" name="question7" value="7Three"><p style="display:inline; color:white" id="q7-3">Restauranger</p><br><br>
+    
+    <h3 style="color:white">
+      Vad kan orsakar föroreningar?
+    </h3>
+    <input type="radio" name="question8" value="8One"><p style="display:inline; color:white" id="q8-1">På grund av dålig mat</p><br>
+    <input type="radio" name="question8" value="8Two"><p style="display:inline; color:white" id="q8-2">Höjda vattennivåer</p><br>
+    <input type="radio" name="question8" value="8Three"><p style="display:inline; color:white" id="q8-3">Människors vanor</p><br><br>
+    <!KÖR METODEN "doThaThang()" PÅ KNAPPTRYCK>
+    <button type="button" onclick="doThaThang()">
+        Lämna in svar
+    </button>
+      
+    <br>
+    
+    <div id="result" style="color:white"></div>
+    <!RESULTATET SKRIVS UT HÄR>
+    <script>
+        function doThaThang() {            
+            var counter = 0;
+            var temp = "";
+            var text = "";
+            
+            //QUESTION 1
+            //INDIVIDUELL "CHECK" PÅ VARJE FRÅGA UTIFALL ATT MAN VILL HA OLIKA ANTAL SVARSALTERNATIV
+            //VARJE FRÅGA KOLLAS PÅ SAMMA SÄTT, KOMMENTERAR DÄRFÖR BARA FÖRSTA FRÅGAN
+            var q1 = document.getElementsByName('question1');                   //HÄMTAR ALLA ELEMENT MED NAMNET "question1", BLIR SOM EN "ARRAY"
+            for(i = 0; i < q1.length; i++) {                                    //FOR-LOOP FÖR ATT KOLLA VILKEN RADIO-BUTTON SOM ÄR CHECKAD I "ARRAYEN"
+                if(q1[i].checked)
+                temp = q1[i].value;
+            }
+            if(temp == "1One")                                                  //KOLLAR OM VÄRDET PÅ "temp" SOM ÄR DEN CHECKADE BOXEN MATCHAR RÄTT SVAR
+            {
+            counter++;                                                          //ADDERAR 1 TILL COUNTER FÖR ANTAL RÄTT SVAR I SLUTET
+            document.getElementById('q1-1').style.color = "#95F985";            //SÄTTER FÄRGEN TILL GRÖN VID RÄTT SVAR, GENOM ID PÅ PARAGRAPHEN
+            }
+            else
+            {
+            document.getElementById('q1-1').style.color = "#95F985";            //SÄTTER FÄRGEN TILL GRÖN VID FEL SVAR, GENOM ID PÅ PARAGRAPHEN
+            document.getElementById('q1-2').style.color = "#FF7F7F";            //SÄTTER FÄRGEN TILL RÖD VID FEL SVAR, GENOM ID PÅ PARAGRAPHEN
+            document.getElementById('q1-3').style.color = "#FF7F7F";            //SÄTTER FÄRGEN TILL RÖD VID FEL SVAR, GENOM ID PÅ PARAGRAPHEN
+            text += "Fel på fråga 1" + "<br>";                                  //SKRIVER UT VILKEN FRÅGA SOM ÄR FEL I SLUTET
+            }
+            
+            //QUESTION 2
+            var q2 = document.getElementsByName('question2');
+            for(i = 0; i < q2.length; i++) {
+                if(q2[i].checked)
+                temp = q2[i].value;
+            }
+            if(temp == "2Two")
+            {
+            counter++;
+            document.getElementById('q2-2').style.color = "#95F985";
+            }
+            else
+            {
+            document.getElementById('q2-1').style.color = "#FF7F7F";
+            document.getElementById('q2-2').style.color = "#95F985";
+            document.getElementById('q2-3').style.color = "#FF7F7F";
+            text += "Fel på fråga 2" + "<br>";
+            }
+            
+            //QUESTION 3
+            var q3 = document.getElementsByName('question3');
+            for(i = 0; i < q3.length; i++) {
+                if(q3[i].checked)
+                temp = q3[i].value;
+            }
+            if(temp == "3One")
+            {
+            document.getElementById('q3-1').style.color = "#95F985";
+            counter++;
+            }
+            else
+            {
+            document.getElementById('q3-1').style.color = "#95F985";
+            document.getElementById('q3-2').style.color = "#FF7F7F";
+            document.getElementById('q3-3').style.color = "#FF7F7F";
+            text += "Fel på fråga 3" + "<br>";
+            }
+            
+            //QUESTION 4
+            var q4 = document.getElementsByName('question4');
+            for(i = 0; i < q4.length; i++) {
+                if(q4[i].checked)
+                temp = q4[i].value;
+            }
+            if(temp == "4One")
+            {
+            counter++;
+            document.getElementById('q4-1').style.color = "#95F985";
+            }
+            else
+            {
+            document.getElementById('q4-1').style.color = "#95F985";
+            document.getElementById('q4-2').style.color = "#FF7F7F";
+            document.getElementById('q4-3').style.color = "#FF7F7F";
+            text += "Fel på fråga 4" + "<br>";
+            }
+            
+            //QUESTION 5
+            var q5 = document.getElementsByName('question5');
+            for(i = 0; i < q5.length; i++) {
+                if(q5[i].checked)
+                temp = q5[i].value;
+            }
+            if(temp == "5Two")
+            {
+            counter++;
+            document.getElementById('q5-2').style.color = "#95F985";
+            }
+            else
+            {
+            document.getElementById('q5-1').style.color = "#FF7F7F";
+            document.getElementById('q5-2').style.color = "#95F985";
+            document.getElementById('q5-3').style.color = "#FF7F7F";
+            text += "Fel på fråga 5" + "<br>";
+            }
+            
+            //QUESTION 6
+            var q6 = document.getElementsByName('question6');
+            for(i = 0; i < q6.length; i++) {
+                if(q6[i].checked)
+                temp = q6[i].value;
+            }
+            if(temp == "6Two")
+            {
+            counter++;
+            document.getElementById('q6-2').style.color = "#95F985";
+            }
+            else
+            {
+            document.getElementById('q6-1').style.color = "#FF7F7F";
+            document.getElementById('q6-2').style.color = "#95F985";
+            document.getElementById('q6-3').style.color = "#FF7F7F";
+            text += "Fel på fråga 6" + "<br>";
+            }
+            
+            //QUESTION 7
+            var q7 = document.getElementsByName('question7');
+            for(i = 0; i < q7.length; i++) {
+                if(q7[i].checked)
+                temp = q7[i].value;
+            }
+            if(temp == "7One")
+            {
+            document.getElementById('q7-1').style.color = "#95F985";
+            counter++;
+            }
+            else
+            {
+            document.getElementById('q7-1').style.color = "#95F985";
+            document.getElementById('q7-2').style.color = "#FF7F7F";
+            document.getElementById('q7-3').style.color = "#FF7F7F";
+            text += "Fel på fråga 7" + "<br>";
+            }
+            
+            //QUESTION 8
+            var q8 = document.getElementsByName('question8');
+            for(i = 0; i < q8.length; i++) {
+                if(q8[i].checked)
+                temp = q8[i].value;
+            }
+            if(temp == "8Two")
+            {
+            document.getElementById('q8-2').style.color = "#95F985";
+            counter++;
+            }
+            else
+            {
+            document.getElementById('q8-1').style.color = "#FF7F7F";
+            document.getElementById('q8-2').style.color = "#95F985";
+            document.getElementById('q8-3').style.color = "#FF7F7F";
+            text += "Fel på fråga 8" + "<br>";
+            }
+            
+            
+        text += "Antal rätt: " + counter;                   //SKRIVER UT ANTALET RÄTT/FEL MED HJÄLP AV VARIABLERNA "text" och "counter"
+                                                            //VARIABELN TEXT INNEHÅLLER ALLA FRÅGOR SOM HAR FEL SVAR SEN TIDIGARE OCH ADDERAR PÅ "ANTAL RÄTT" GENOM
+                                                            //VARIABELN COUNTER SOM INNEHÅLLER ANTALET FRÅGOR MED RÄTT SVAR
+        document.getElementById("result").innerHTML= text;  //ÄNDRAR ELEMENTET MED ID="result" SÅ ATT DET INNEHÅLLER VARIABELN "text"
+        }
+    </script>
+</body>
+</html> 
